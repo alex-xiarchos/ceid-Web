@@ -1,0 +1,49 @@
+﻿\documentclass[12pt]{report}
+
+\input{setup}
+
+\begin{document}
+
+    \begin{titlepage}
+        \centering
+
+        \renewcommand{\arraystretch}{1.1} % Increase row height
+        \begin{tabularx}{\textwidth}{@{}m{0.9\textwidth}X@{}}
+            \centering \raggedleft \cellcolor{lightgray!25} Αλέξανδρος Ξιάρχος\\ {\footnotesize st1059619@ceid.upatras.gr} & \centering\cellcolor{darkgray}\fontDin \raisebox{-1pt}{\color{white}1059619 \\}
+        \end{tabularx}
+
+        \vspace*{12em}
+        \begin{headerlight}
+            \begin{Din}
+                \centering
+                {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \(\cdot\) ΤΜΗΜΑ ΜΗΧΑΝΙΚΩΝ Η/Υ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ}
+            \end{Din}
+        \end{headerlight}
+
+        \begin{headerdark}
+            \begin{Din Medium}
+                \centering
+                \huge \textcolor{white}{ΕΙΣΑΓΩΓΗ ΣΤΗ ΒΙΟΠΛΗΡΟΦΟΡΙΚΗ:\\ XML ΚΑΙ ΒΙΟΠΛΗΡΟΦΟΡΙΚΗ}
+            \end{Din Medium}
+        \end{headerdark}
+
+        \begin{headerlight}
+            \begin{Din}
+                \centering
+               ΔΕΥΤΕΡΟ ΣΥΝΟΛΟ ΑΣΚΗΣΕΩΝ \(\cdot\) 2023 \(\textendash\) 2024
+            \end{Din}
+        \end{headerlight}
+
+        \vspace*{10em}
+
+    \end{titlepage}
+
+    \tableofcontents
+    \pagebreak
+
+%   ===================================================================================================================
+
+    \input{ch1}
+    \pagebreak
+
+\end{document}
