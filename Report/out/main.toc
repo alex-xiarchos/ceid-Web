@@ -1,3 +1,2 @@
 \babel@toc {greek}{}\relax 
-\contentsline {chapter}{\numberline {1}ΠΕΡΙΓΡΑΦΗ ΒΑΣΗΣ}{2}{chapter.1}%
-\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }fdsfds}{2}{section.1.1}%
+\contentsline {chapter}{\numberline {1}ΣΧΕΔΙΑΣΜΟΣ ΒΑΣΗΣ}{2}{chapter.1}%
