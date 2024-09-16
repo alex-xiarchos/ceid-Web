@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  16 SEP 2024 06:01
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  16 SEP 2024 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2979,7 +2979,7 @@ LaTeX Warning: Command \textendash invalid in math mode on input line 32.
 
 ] (W:/PycharmProjects\ceid-web\Report\out\main.toc
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 9.60004pt on input line 4.
+(Font)              scaled to size 9.60004pt on input line 5.
 )
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -3106,20 +3106,11 @@ Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
-2_login.tex:15: Undefined control sequence.
-l.15         Η συνάρτηση \textt
-                               {login} δέχεται τα ορίσματα των input fields ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 2_login.tex:15: You can't use `macro parameter character #' in horizontal mode.
 <argument> id = ##
                   username
-l.15 ...ων input fields με \texttt{id = #username}
-                                                   και \texttt{id = #password},
+l.15 ...ατα των input fields με \c{id = #username}
+                                                   και \c{id = #password},
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
@@ -3128,7 +3119,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 2_login.tex:15: You can't use `macro parameter character #' in horizontal mode.
 <argument> id = ##
                   password
-l.15 ...d = #username} και \texttt{id = #password}
+l.15 ... \c{id = #username} και \c{id = #password}
                                                   ,
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -3138,8 +3129,8 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 2_login.tex:23: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.23     \subsection{\texttt{login.php}}
-                                        
+l.23     \subsection{\c{login.php}}
+                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -3147,8 +3138,8 @@ look up `weird error' in the index to The TeXbook.)
 2_login.tex:23: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.23     \subsection{\texttt{login.php}}
-                                        
+l.23     \subsection{\c{login.php}}
+                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3206,8 +3197,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 2_register.tex:10: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.10     \subsection{\texttt{signup.js}}
-                                        
+l.10     \subsection{\c{signup.js}}
+                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -3215,8 +3206,8 @@ look up `weird error' in the index to The TeXbook.)
 2_register.tex:10: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.10     \subsection{\texttt{signup.js}}
-                                        
+l.10     \subsection{\c{signup.js}}
+                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3227,8 +3218,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 2_register.tex:24: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.24     \subsection{\texttt{register\_user.php}}
-                                                 
+l.24     \subsection{\c{register\_user.php}}
+                                            
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -3236,8 +3227,8 @@ look up `weird error' in the index to The TeXbook.)
 2_register.tex:24: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.24     \subsection{\texttt{register\_user.php}}
-                                                 
+l.24     \subsection{\c{register\_user.php}}
+                                            
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3277,7 +3268,116 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-)
+File: img/admin-dashboard.png Graphic file (type bmp)
+<img/admin-dashboard.png>
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+2_admin.tex:15: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.15     \subsection{Quick Summary}
+                                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:15: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.15     \subsection{Quick Summary}
+                                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+2_admin.tex:16: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.16 ...συνολικό αριθμό των items (\c{#totalItems}
+                                                  ),
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+2_admin.tex:16: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.16 ...συνολικό αριθμό των items (\c{#totalItems}
+                                                  ),
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+2_admin.tex:17: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.17 ...ν items που τελειώνουν (\c{#lowStockItems}
+                                                  ), και επιστρέφονται σε JS...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+2_admin.tex:17: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.17 ...ν items που τελειώνουν (\c{#lowStockItems}
+                                                  ), και επιστρέφονται σε JS...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+2_admin.tex:18: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.18 ...cles που είναι ενεργά (\c{#activeVehicles}
+                                                  ).
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+2_admin.tex:18: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.18 ...cles που είναι ενεργά (\c{#activeVehicles}
+                                                  ).
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+2_admin.tex:21: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.21     \subsection{Create Announcement}
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:21: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.21     \subsection{Create Announcement}
+                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3287,7 +3387,81 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
-[5] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
+[5]
+2_admin.tex:37: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.37     \subsection{Create Rescuer Account}
+                                            
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:37: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.37     \subsection{Create Rescuer Account}
+                                            
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+2_admin.tex:42: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.42     \subsection{Announcements Summary}
+                                           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:42: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.42     \subsection{Announcements Summary}
+                                           
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+2_admin.tex:46: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.46     \subsection{Graphs}
+                            
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:46: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.46     \subsection{Graphs}
+                            
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[6] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
@@ -3296,14 +3470,8 @@ L3 programming layer <2024-08-16>
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9D05A2885E70B24359F9E9F38B289D9E;728
-(rerunfilecheck)             After:  AD77F256198BE741EB044C91A5A3D428;899.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 2375D05B702D4364AC2621F66C0C77C9;1628.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -3314,12 +3482,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50304 strings out of 409029
- 1112182 string characters out of 5756742
- 1984630 words of memory out of 5000000
- 72338 multiletter control sequences out of 15000+600000
+ 50325 strings out of 409029
+ 1112739 string characters out of 5756742
+ 1985600 words of memory out of 5000000
+ 72358 multiletter control sequences out of 15000+600000
  565357 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  121i,14n,124p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (6 pages).
+Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (7 pages).

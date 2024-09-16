@@ -1,5 +1,5 @@
 \section{LOGIN}
-    Ως \texttt{index.html} ορίζεται η σελίδα Login, στην οποία γίνεται η σύνδεση ή η εγγραφή των χρηστών-πολιτών.
+    Ως \c{index.html} ορίζεται η σελίδα Login, στην οποία γίνεται η σύνδεση ή η εγγραφή των χρηστών-πολιτών.
     \begin{figure}[H] \noindent \centering
         \includegraphics[width=0.3\textwidth]{img/login}
         \caption{Φόρμα Login}
@@ -12,17 +12,17 @@
         \caption{πίνακας users}
     \end{figure}
 
-        Η συνάρτηση \textt{login} δέχεται τα ορίσματα των input fields με \texttt{id = #username} και \texttt{id = #password},
+        Η συνάρτηση \c{login} δέχεται τα ορίσματα των input fields με \c{id = #username} και \c{id = #password},
             ελέγχεται αν έχουν πληροφορία (αν δεν έχουν, στέλνεται alert μέσω της SweetAlert), και αν έχουν,
-            στέλνονται με ένα AJAX request στο \texttt{login.php}.
+            στέλνονται με ένα AJAX request στο \c{login.php}.
 
-        Σε περίπτωση επιτυχίας καλείται η \texttt{handleSuccess()}.
+        Σε περίπτωση επιτυχίας καλείται η \c{handleSuccess()}.
         Αυτή, στο αντικείμενο που επιστρέφεται \footnote{redundant, αλλά ελέγχεται αν όντως επιστρέφεται αντικέιμενο· αν όχι εμφανίζεται error},
-            ελέγχει το \texttt{user\_type} και κάνει το αντίστοιχο redirect (με ένα delay 2 sec) στην επόμενη σελίδα.
+            ελέγχει το \c{user\_type} και κάνει το αντίστοιχο redirect (με ένα delay 2 sec) στην επόμενη σελίδα.
 
-    \subsection{\texttt{login.php}}
-        Αφού ανακτήσει το \texttt{username} και \texttt{password} από το AJAX request, στέλνει query στη βάση δεδομένων βάσει του \texttt{username}.
-        Αν βρει, ελέγχει εξίσου και το \texttt{password} και στη συνέχεια δημιουργεί ένα array με τις πληροφορίες (\texttt{username}, \texttt{user\_id} και \texttt{user\_type}) του χρήστη, και ένα cookie με διάρκεια 30 ημερών.
+    \subsection{\c{login.php}}
+        Αφού ανακτήσει το \c{username} και \c{password} από το AJAX request, στέλνει query στη βάση δεδομένων βάσει του \c{username}.
+        Αν βρει, ελέγχει εξίσου και το \c{password} και στη συνέχεια δημιουργεί ένα array με τις πληροφορίες (\c{username}, \c{user\_id} και \c{user\_type}) του χρήστη, και ένα cookie με διάρκεια 30 ημερών.
 
         Εν τέλει, στέλνεται με echo ένα JSON αρχείο της μορφής
         \begin{graycomment}
