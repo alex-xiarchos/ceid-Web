@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  16 SEP 2024 20:17
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  16 SEP 2024 22:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3451,6 +3451,29 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
+
+2_admin.tex:51: LaTeX Error: File `img/admin-generate_graph' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...h=0.9\textwidth]{img/admin-generate_graph}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
+,.ps,.PS,.eps,.EPS,.mps,.MPS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
 )
 
 
@@ -3482,10 +3505,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50325 strings out of 409029
- 1112739 string characters out of 5756742
+ 50371 strings out of 409029
+ 1114291 string characters out of 5756742
  1985600 words of memory out of 5000000
- 72358 multiletter control sequences out of 15000+600000
+ 72404 multiletter control sequences out of 15000+600000
  565357 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  121i,14n,124p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
