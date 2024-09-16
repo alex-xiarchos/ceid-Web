@@ -1,4 +1,7 @@
 \babel@toc {greek}{}\relax 
 \contentsline {chapter}{\numberline {1}ΣΧΕΔΙΑΣΜΟΣ ΒΑΣΗΣ}{2}{chapter.1}%
 \contentsline {chapter}{\numberline {2}ΥΛΟΠΟΙΗΣΗ}{2}{chapter.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.0.2}\else \textLR {2.0.1}\fi }ΧΑΡΤΗΣ ΥΛΟΠΟΙΗΣΗΣ}{2}{subsection.2.0.1}%
 \contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }LOGIN}{2}{section.2.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.1.2}\else \textLR {2.1.1}\fi }\texttt {login.js}}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.1.2}\else \textLR {2.1.2}\fi }\texttt {login.php}}{3}{subsection.2.1.2}%

@@ -5,14 +5,12 @@
     Επιπλέον, για την κατασκευή των χαρτών στο frontend, αξιοποιήθηκε η βιβλιοθήκη \textbf{Leaflet}, που παρέχει διαδραστικούς και ευέλικτους χάρτες.
     Τέλος, για το responsive design της εφαρμογής χρησιμοποιήσαμε \textbf{Tailwind CSS} με Flexbox ώστε να έχουμε σωστή στοιχειοθέτηση σε πληθώρα αναλύσεων και συσκευών.
 
-\subsection{ΧΑΡΤΗΣ ΥΛΟΠΟΙΗΣΗΣ
-
-\section{LOGIN}
-    Ως \texttt{index.html} ορίζεται η σελίδα login / register.
-
-    \begin{figure}[h!] \noindent \centering
-        \includegraphics[width=0.3\textwidth]{img/login}
-        \includegraphics[width=0.3\textwidth]{img/register}
-        \includegraphics[width=0.3\textwidth]{img/register-location}
-        \caption{Σελίδα Login - Register. \\Κατά την εγγραφή ορίζουμε την τοποθεσία του εκάστοτε χρήστη.}
-    \end{figure}
+\subsection{ΧΑΡΤΗΣ ΥΛΟΠΟΙΗΣΗΣ}
+    \begin{tblr}{
+        colspec={>{\centering\arraybackslash}m{35mm}>{\centering\arraybackslash}m{35mm}>{\centering\arraybackslash}m{70mm}},
+        row{2,4,6,8}={bg=lightgray!50}, row{3,5,7,9}={bg=lightgray}, row{1}={bg=black!90,fg=white}}
+        Σελίδα                             & Javascript                & PHP                  \\
+        \textbf{\texttt{index.html}}       & \texttt{login.js}         & \texttt{login.php} \\
+        \textbf{\texttt{signup.html}}      & \texttt{signup.js}        & \texttt{register\_user.php} \\
+        \textbf{\texttt{signup.html}}      & \texttt{signup.js}        & \texttt{register\_user.php} \\
+    \end{tblr}
