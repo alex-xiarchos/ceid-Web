@@ -1,34 +1,27 @@
-\section{LOGIN}
-    Ως \texttt{index.html} ορίζεται η σελίδα Login, στην οποία γίνεται η σύνδεση ή η εγγραφή των χρηστών-πολιτών.
-    \begin{figure}[h!] \noindent \centering
-        \includegraphics[width=0.3\textwidth]{img/login}
-        \caption{Σελίδα Login}
-    \end{figure}
+\section{REGISTER}
+    Στη σελίδα \texttt{signup.html} ορίζεται η φόρμα εγγραφής των χρηστών-πολιτών:
 
-    Στη βάση δεδομένων έχουν ήδη δημιουργηθεί κάποιοι λογαριασμοί πολιτών:
-
-%    PLACEHOLDER
-
-    \subsection{\texttt{login.js}}
-        Η συνάρτηση \textt{login} δέχεται τα ορίσματα των input fields με ID: \texttt{#username} και \texttt{#password},
-            ελέγχεται αν έχουν πληροφορία (αν δεν έχουν, στέλνεται alert μέσω της SweetAlert), και αν έχουν,
-            στέλνονται με ένα AJAX request sto \texttt{login.php}.
-
-        Σε περίπτωση επιτυχίας καλείται η \texttt{handleSuccess()}.
-        Αυτή, στο αντικείμενο που επιστρέφεται \footnote{redundant, αλλά ελέγχεται αν όντως επιστρέφεται αντικέιμενο· αν όχι εμφανίζεται error},
-            ελέγχει το \texttt{user\_type} και κάνει το αντίστοιχο redirect (με ένα delay 2 sec) στην επόμενη σελίδα.
-
-    \subsection{\texttt{login.php}}
-        Αφού ανακτήσει το \texttt{username} και \texttt{password} από το AJAX request, στέλνει query στη βάση δεδομένων βάσει του \texttt{username}.
-        Αν βρει, ελέγχει εξίσου και το \texttt{password} και στη συνέχεια δημιουργεί ένα array με τις πληροφορίες (\texttt{username}, \texttt{user\_id} και \texttt{user\_type}) του χρήστη, και ένα cookie με διάρκεια 30 ημερών.
-
-        Εν τέλει, στέλνεται με echo ένα JSON αρχείο της μορφής
-        \begin{graycomment}
-            \verb|[{"username": <...>, "user_id": <...>, "user_type": <"a" ή "r" ή "c">}]|
-        \end{graycomment}
-
-    \begin{figure}[h!] \noindent \centering
+    \begin{figure}[H] \noindent \centering
         \includegraphics[width=0.3\textwidth]{img/register}
         \includegraphics[width=0.3\textwidth]{img/register-location}
-        \caption{Σελίδα Signup. \\Κατά την εγγραφή ορίζουμε την τοποθεσία του εκάστοτε χρήστη.}
+        \caption{Σελίδα Signup και modal προσδιορισμού τοποθεσίας}
     \end{figure}
+
+    \subsection{\texttt{signup.js}}
+        Η συνάρτηση \texttt{signup()} δέχεται τα ορίσματα των input fields, ελέγχει αν έχουν πληροφορία (αν δεν έχουν, στέλνεται alert),
+            και αν έχουν, στέλνει ένα AJAX request στο \texttt{register\_user.php}.
+
+        Οι συναρτήσεις \texttt{openModal()} και \texttt{closeModal()}, εμφανίζουν και αποκρύπτουν το modal προσδιορισμού τοποθεσίας,
+            το οποίο εμφανίζεται πατώντας στο κουμπί \textbf{Set Location}.
+        Αυτό επιτυγχάνεται με την κατάλληλη αφαίρεση και προσθήκη κλάσεων του Tailwind CSS.
+
+        Στην εμφάνιση του \textbf{Set Location}, αρχικοποιείται ο χάρτης μέσω της \texttt{initializeMap()}.
+        Ορίζεται η σταθερά \texttt{map} μέσω της Leaflet, με κεντραρισμένο view στο κέντρο της Πάτρας.
+        Ορίζεται ο χάρτης που θα χρησιμοποιήσουμε ως συγκεκριμένο \texttt{tileLayer} (ο οποίος χάρτης εξάγεται μέσω API από το maptiler.com),
+            και προστίθεται ένα marker (\texttt{userIcon} που αντιστοιχεί στην εικόνα \texttt{user.png}), το οποίο αρχικοποιείται με αρχική θέση στο κέντρο της Πάτρας (ίδιο location με την αρχικοποίηση του view).
+        Ελέγχεται το event του \texttt{click}, και σε εκείνη την περίπτωση αποθηκεύονται οι αλλαγμένες συντεταγμένες ως value στο \texttt{input} με \mbox{\texttt{id = location}}.
+
+    \subsection{\texttt{register\_user.php}}
+        Αφού ανακτηθούν οι πληροφορίες, γίνονται insert στη βάση δεδομένων και γίνεται echo μήνυμα επιτυχίας.
+        Στην περίπτωση της μεταβλητής της τοποθεσίας, είναι αναγκαία η διάσπασή της σε ξεχωριστές μεταβλητές για το \texttt{latitude} και \texttt{longitude}.
+

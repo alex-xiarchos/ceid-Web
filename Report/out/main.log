@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  16 SEP 2024 04:17
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  16 SEP 2024 05:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2979,7 +2979,7 @@ LaTeX Warning: Command \textendash invalid in math mode on input line 32.
 
 ] (W:/PycharmProjects\ceid-web\Report\out\main.toc
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 9.60004pt on input line 6.
+(Font)              scaled to size 9.60004pt on input line 5.
 )
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -3052,41 +3052,6 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-2.tex:8: Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.8 \subsection{ΧΑΡΤΗΣ ΥΛΟΠΟΙΗΣΗΣ}
-                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-2.tex:8: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \protect 
-l.8 \subsection{ΧΑΡΤΗΣ ΥΛΟΠΟΙΗΣΗΣ}
-                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 8.
-
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-LaTeX Font Info:    Font shape `TU/CourierNew(0)/b/n' will be
-(Font)              scaled to size 9.60004pt on input line 16.
-> Step: build the whole table.
 ) (2_login.tex
 2_login.tex:1: Missing number, treated as zero.
 <to be read again> 
@@ -3120,79 +3085,6 @@ anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-2_login.tex:12: Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.12     \subsection{\texttt{login.js}}
-                                       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-2_login.tex:12: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \protect 
-l.12     \subsection{\texttt{login.js}}
-                                       
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 11.52003pt on input line 12.
-2_login.tex:13: Undefined control sequence.
-l.13         Η συνάρτηση \textt
-                               {login} δέχεται τα ορίσματα των input fields ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-2_login.tex:13: Illegal parameter number in definition of \reserved@b.
-<to be read again> 
-                   }
-l.13 ...των input fields με ID: \texttt{#username}
-                                                   και \texttt{#password},
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-2_login.tex:13: You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.13 ...των input fields με ID: \texttt{#username}
-                                                   και \texttt{#password},
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-2_login.tex:13: Illegal parameter number in definition of \reserved@b.
-<to be read again> 
-                   }
-l.13 ... \texttt{#username} και \texttt{#password}
-                                                  ,
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-2_login.tex:13: You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.13 ... \texttt{#username} και \texttt{#password}
-                                                  ,
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3203,20 +3095,84 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
 [2]
-2_login.tex:21: Missing number, treated as zero.
+File: img/sql-users.png Graphic file (type bmp)
+<img/sql-users.png>
+
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+2_login.tex:15: Undefined control sequence.
+l.15         Η συνάρτηση \textt
+                               {login} δέχεται τα ορίσματα των input fields ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+2_login.tex:15: You can't use `macro parameter character #' in horizontal mode.
+<argument> id = ##
+                  username
+l.15 ...ων input fields με \texttt{id = #username}
+                                                   και \texttt{id = #password},
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+2_login.tex:15: You can't use `macro parameter character #' in horizontal mode.
+<argument> id = ##
+                  password
+l.15 ...d = #username} και \texttt{id = #password}
+                                                  ,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+2_login.tex:23: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.21     \subsection{\texttt{login.php}}
+l.23     \subsection{\texttt{login.php}}
                                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-2_login.tex:21: Illegal unit of measure (pt inserted).
+2_login.tex:23: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.21     \subsection{\texttt{login.php}}
+l.23     \subsection{\texttt{login.php}}
                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
+(Font)              scaled to size 11.52003pt on input line 23.
+) (2_register.tex
+2_register.tex:1: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.1 \section{REGISTER}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_register.tex:1: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.1 \section{REGISTER}
+                      
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3237,9 +3193,6 @@ anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3250,6 +3203,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
 [3]
+2_register.tex:10: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.10     \subsection{\texttt{signup.js}}
+                                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_register.tex:10: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.10     \subsection{\texttt{signup.js}}
+                                        
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+2_register.tex:24: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.24     \subsection{\texttt{register\_user.php}}
+                                                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_register.tex:24: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.24     \subsection{\texttt{register\_user.php}}
+                                                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3259,7 +3255,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
-[4] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
+[4] (2_admin.tex
+2_admin.tex:1: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.1 \section{ADMIN}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:1: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.1 \section{ADMIN}
+                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[5] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
@@ -3269,7 +3297,7 @@ L3 programming layer <2024-08-16>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A7AF534355DE901FBF73741A6511CB15;767.
+(rerunfilecheck)             Checksum: AD77F256198BE741EB044C91A5A3D428;899.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -3280,12 +3308,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50349 strings out of 409029
- 1113862 string characters out of 5756742
- 1987665 words of memory out of 5000000
- 72389 multiletter control sequences out of 15000+600000
- 566463 words of font info for 140 fonts, out of 8000000 for 9000
+ 50304 strings out of 409029
+ 1112182 string characters out of 5756742
+ 1984822 words of memory out of 5000000
+ 72338 multiletter control sequences out of 15000+600000
+ 565357 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  121i,14n,124p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (5 pages).
+Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (6 pages).
