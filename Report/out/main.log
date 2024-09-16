@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  16 SEP 2024 22:16
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  17 SEP 2024 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3268,6 +3268,27 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
+2_admin.tex:2: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.2     \subsection{Dashboard}
+                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:2: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.2     \subsection{Dashboard}
+                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 File: img/admin-dashboard.png Graphic file (type bmp)
 <img/admin-dashboard.png>
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
@@ -3278,20 +3299,20 @@ Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
-2_admin.tex:15: Missing number, treated as zero.
+2_admin.tex:16: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.15     \subsection{Quick Summary}
-                                   
+l.16         \subsubsection{Quick Summary}
+                                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-2_admin.tex:15: Illegal unit of measure (pt inserted).
+2_admin.tex:16: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.15     \subsection{Quick Summary}
-                                   
+l.16         \subsubsection{Quick Summary}
+                                          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3299,30 +3320,11 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-2_admin.tex:16: Illegal parameter number in definition of \reserved@b.
-<to be read again> 
-                   }
-l.16 ...συνολικό αριθμό των items (\c{#totalItems}
-                                                  ),
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-2_admin.tex:16: You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.16 ...συνολικό αριθμό των items (\c{#totalItems}
-                                                  ),
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
 2_admin.tex:17: Illegal parameter number in definition of \reserved@b.
 <to be read again> 
                    }
-l.17 ...ν items που τελειώνουν (\c{#lowStockItems}
-                                                  ), και επιστρέφονται σε JS...
+l.17 ...συνολικό αριθμό των items (\c{#totalItems}
+                                                  ),
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -3330,8 +3332,8 @@ are all screwed up? I'm going to assume that you meant ##.
 2_admin.tex:17: You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.17 ...ν items που τελειώνουν (\c{#lowStockItems}
-                                                  ), και επιστρέφονται σε JS...
+l.17 ...συνολικό αριθμό των items (\c{#totalItems}
+                                                  ),
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
@@ -3340,8 +3342,8 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 2_admin.tex:18: Illegal parameter number in definition of \reserved@b.
 <to be read again> 
                    }
-l.18 ...cles που είναι ενεργά (\c{#activeVehicles}
-                                                  ).
+l.18 ...ν items που τελειώνουν (\c{#lowStockItems}
+                                                  ), και επιστρέφονται σε JS...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -3349,27 +3351,46 @@ are all screwed up? I'm going to assume that you meant ##.
 2_admin.tex:18: You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.18 ...cles που είναι ενεργά (\c{#activeVehicles}
+l.18 ...ν items που τελειώνουν (\c{#lowStockItems}
+                                                  ), και επιστρέφονται σε JS...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+2_admin.tex:19: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.19 ...cles που είναι ενεργά (\c{#activeVehicles}
+                                                  ).
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+2_admin.tex:19: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.19 ...cles που είναι ενεργά (\c{#activeVehicles}
                                                   ).
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-2_admin.tex:21: Missing number, treated as zero.
+2_admin.tex:22: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.21     \subsection{Create Announcement}
-                                         
+l.22         \subsubsection{Create Announcement}
+                                                
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-2_admin.tex:21: Illegal unit of measure (pt inserted).
+2_admin.tex:22: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.21     \subsection{Create Announcement}
-                                         
+l.22         \subsubsection{Create Announcement}
+                                                
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3388,84 +3409,71 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
 [5]
-2_admin.tex:37: Missing number, treated as zero.
+2_admin.tex:38: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.37     \subsection{Create Rescuer Account}
-                                            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-2_admin.tex:37: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \protect 
-l.37     \subsection{Create Rescuer Account}
-                                            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-2_admin.tex:42: Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.42     \subsection{Announcements Summary}
-                                           
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-2_admin.tex:42: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \protect 
-l.42     \subsection{Announcements Summary}
-                                           
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-2_admin.tex:46: Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.46     \subsection{Graphs}
-                            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-2_admin.tex:46: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \protect 
-l.46     \subsection{Graphs}
-                            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-2_admin.tex:51: LaTeX Error: File `img/admin-generate_graph' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+l.38 ...    \subsubsection{Create Rescuer Account}
                                                   
-l.51 ...h=0.9\textwidth]{img/admin-generate_graph}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
+2_admin.tex:38: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.38 ...    \subsubsection{Create Rescuer Account}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+2_admin.tex:43: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.43         \subsubsection{Announcements Summary}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:43: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.43         \subsubsection{Announcements Summary}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+2_admin.tex:47: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.47         \subsubsection{Graphs}
+                                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:47: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.47         \subsubsection{Graphs}
+                                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: img/admin-generate_graph.png Graphic file (type bmp)
+<img/admin-generate_graph.png>
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
@@ -3474,7 +3482,38 @@ Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
-)
+2_admin.tex:60: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.60     \subsection{Base}
+                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_admin.tex:60: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.60     \subsection{Base}
+                          
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: img/admin-base.png Graphic file (type bmp)
+<img/admin-base.png>
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3484,33 +3523,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
-[6] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
+[6])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[7] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2375D05B702D4364AC2621F66C0C77C9;1628.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 679D2AAB68993433C12083E47DA4849D;1867.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50371 strings out of 409029
- 1114291 string characters out of 5756742
- 1985600 words of memory out of 5000000
- 72404 multiletter control sequences out of 15000+600000
+ 50368 strings out of 409029
+ 1113892 string characters out of 5756742
+ 1986833 words of memory out of 5000000
+ 72399 multiletter control sequences out of 15000+600000
  565357 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  121i,14n,124p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (7 pages).
+Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (8 pages).
