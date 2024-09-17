@@ -58,7 +58,6 @@
             Με το JSON αρχείο που επιστρέφεται σε κάθε περίπτωση, η \c{fetchGraphData()} μέσω της ChartJS δημιουργεί το αντίστοιχο γράφημα.
 
     \subsection{Base}
-
         \begin{figure}[H] \noindent \centering
             \includegraphics[width=0.8\textwidth]{img/admin-base}
             \caption{Σελίδα με τα αντικείμενα της Βάσης}
@@ -75,6 +74,11 @@
         Το population της σελίδας με τα αντικείμενα πραγματοποιείται μέσω της \c{updateProductGrid(products)}, η οποία περιέχει μια επανάληψη όπου προσθέτει divs στη HTML σελίδα.
         Περιέχονται Event Listeners για το hover και το click των διαφορετικών αντικειμένων.
 
+        \begin{figure}[H] \noindent \centering
+            \includegraphics[width=0.5\textwidth]{img/admin-base-edit}
+            \caption{Edit modal}
+        \end{figure}
+
         Όταν κάνουμε hover εμφανίζεται ένα tooltip \textbf{Edit}, και αν το κλικάρουμε καλούνται οι πληροφορίες του αντικειμένου μέσω της \c{product\_info.php}, και μπορούμε να τις τροποποιήσουμε.
         Η τροποποίηση πραγματοποιείται μέσω της \c{onProductFound()}, η οποία εμφανίζει το αντίστοιχο modal και καλεί την \c{update\_product.php}.
 
@@ -82,11 +86,31 @@
         Για να διαγραφτεί ένα αντικείμενο, καλείται με AJAX το \c{delete\_product.php}.
 
         \subsubsection{Add an item}
+            \begin{figure}[H] \noindent \centering
+                \includegraphics[width=0.5\textwidth]{img/admin-base-add}
+                \caption{Add product modal}
+            \end{figure}
+
             Το κουμπί \textbf{Add an item} ενεργοποιεί ένα modal με μια φόρμα για προσθήκη νέου προϊόντος.
             Για την επιλογή της κατηγορίας του προϊόντος χρησιμοποιείται το προηγούμενο JSON αρχείο, και όταν το καθορίσουμε και πατήσουμε \textbf{Add}, εκτελείται το \c{insert\_product.php}.
             Μετά την προσθήκη του προϊόντος, γίνεται update το περιεχόμενο της βάσης εκτελώντας ξανά το \c{item\_categories.php}.
 
         \subsubsection{Upload}
-            Το κουμπί \textbf{Upload} μέσω της \c{upload.js} ενεργοποιεί ένα modal\footnote{με κατάλληλη προσθαφαίρεση κλάσεων του Tailwind}, στο οποίο μπορούμε να ανεβάσουμε ένα JSON αρχείο και να αρχικοποιήσουμε ολόκληρη τη βάση.
+            \begin{figure}[H] \noindent \centering
+                \includegraphics[width=0.5\textwidth]{img/admin-base-upload}
+                \caption{Upload JSON modal}
+            \end{figure}
 
-        % PLACEHOLDER ΓΙΑ UPLOAD
+            Το κουμπί \textbf{Upload} μέσω της \c{upload.js} ενεργοποιεί ένα modal, στο οποίο μπορούμε να ανεβάσουμε ένα JSON αρχείο και να αρχικοποιήσουμε ολόκληρη τη βάση.
+            Υπάρχει ένα Event Listener που ενεργοποιείται με το κλικ στο κουμπί \textbf{Upload}, το αρχείο αποθηκεύεται σε έναν reader, και γίνεται ένα AJAX request στο \c{upload.php}.
+            Η PHP ελέγχει αν το προϊόν υπάρχει ήδη (ελέγχοντας το \c{id} του), και αν δεν υπάρχει, τπ προσθέτει.
+
+        \subsection{Map}
+            Η σελίδα περιλαμβάνει μια οπτική αναπαράσταση των Requests, των Offer και των Rescuers σε έναν χάρτη.
+
+            \begin{figure}[H] \noindent \centering
+                \includegraphics[width=0.8\textwidth]{img/admin-map}
+                \caption{Χάρτης admin}
+            \end{figure}
+
+            Κατά τη φόρτωση της σελίδας, στο \c{map.js} τρέχουν οι συναρτήσεις

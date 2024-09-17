@@ -14,5 +14,6 @@
 \contentsline {subsubsection}{\numberline {\if@rl \I {1.3.2}\else \textLR {2.3.1}\fi .4}Announcements Summary}{6}{subsubsection.2.3.1.4}%
 \contentsline {subsubsection}{\numberline {\if@rl \I {1.3.2}\else \textLR {2.3.1}\fi .5}Graphs}{6}{subsubsection.2.3.1.5}%
 \contentsline {subsection}{\numberline {\if@rl \I {2.3.2}\else \textLR {2.3.2}\fi }Base}{7}{subsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {\if@rl \I {2.3.2}\else \textLR {2.3.2}\fi .1}Add an item}{7}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {\if@rl \I {2.3.2}\else \textLR {2.3.2}\fi .1}Add an item}{8}{subsubsection.2.3.2.1}%
 \contentsline {subsubsection}{\numberline {\if@rl \I {2.3.2}\else \textLR {2.3.2}\fi .2}Upload}{8}{subsubsection.2.3.2.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.3.2}\else \textLR {2.3.3}\fi }Map}{9}{subsection.2.3.3}%
