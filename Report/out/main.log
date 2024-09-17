@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  17 SEP 2024 19:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  17 SEP 2024 22:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2317,6 +2317,14 @@ Package caption Info: arabi babel package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen378
+\WF@size=\dimen379
+\c@WF@wrappedlines=\count426
+\WF@box=\box176
+\WF@everypar=\toks63
+Package: wrapfig 2003/01/31  v 3.6
+)
 
 Package fontspec Info: 
 (fontspec)             Font family 'ConduitITCHelLight(0)' created for font
@@ -2457,20 +2465,20 @@ Package fontspec Info:
 
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count426
-\float@exts=\toks63
-\float@box=\box176
-\@float@everytoks=\toks64
-\@floatcapt=\box177
+\c@float@type=\count427
+\float@exts=\toks64
+\float@box=\box177
+\@float@everytoks=\toks65
+\@floatcapt=\box178
 )
-\@float@every@table=\toks65
+\@float@every@table=\toks66
 
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count427
+\lrq@indent=\count428
 
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -2478,49 +2486,49 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count428
-\c@listtotal=\count429
-\c@listcount=\count430
-\c@liststart=\count431
-\c@liststop=\count432
-\c@citecount=\count433
-\c@citetotal=\count434
-\c@multicitecount=\count435
-\c@multicitetotal=\count436
-\c@instcount=\count437
-\c@maxnames=\count438
-\c@minnames=\count439
-\c@maxitems=\count440
-\c@minitems=\count441
-\c@citecounter=\count442
-\c@maxcitecounter=\count443
-\c@savedcitecounter=\count444
-\c@uniquelist=\count445
-\c@uniquename=\count446
-\c@refsection=\count447
-\c@refsegment=\count448
-\c@maxextratitle=\count449
-\c@maxextratitleyear=\count450
-\c@maxextraname=\count451
-\c@maxextradate=\count452
-\c@maxextraalpha=\count453
-\c@abbrvpenalty=\count454
-\c@highnamepenalty=\count455
-\c@lownamepenalty=\count456
-\c@maxparens=\count457
-\c@parenlevel=\count458
-\blx@tempcnta=\count459
-\blx@tempcntb=\count460
-\blx@tempcntc=\count461
-\c@blx@maxsection=\count462
-\blx@maxsegment@0=\count463
-\blx@notetype=\count464
-\blx@parenlevel@text=\count465
-\blx@parenlevel@foot=\count466
-\blx@sectionciteorder@0=\count467
-\blx@sectionciteorderinternal@0=\count468
-\blx@entrysetcounter=\count469
-\blx@biblioinstance=\count470
+\c@tabx@nest=\count429
+\c@listtotal=\count430
+\c@listcount=\count431
+\c@liststart=\count432
+\c@liststop=\count433
+\c@citecount=\count434
+\c@citetotal=\count435
+\c@multicitecount=\count436
+\c@multicitetotal=\count437
+\c@instcount=\count438
+\c@maxnames=\count439
+\c@minnames=\count440
+\c@maxitems=\count441
+\c@minitems=\count442
+\c@citecounter=\count443
+\c@maxcitecounter=\count444
+\c@savedcitecounter=\count445
+\c@uniquelist=\count446
+\c@uniquename=\count447
+\c@refsection=\count448
+\c@refsegment=\count449
+\c@maxextratitle=\count450
+\c@maxextratitleyear=\count451
+\c@maxextraname=\count452
+\c@maxextradate=\count453
+\c@maxextraalpha=\count454
+\c@abbrvpenalty=\count455
+\c@highnamepenalty=\count456
+\c@lownamepenalty=\count457
+\c@maxparens=\count458
+\c@parenlevel=\count459
+\blx@tempcnta=\count460
+\blx@tempcntb=\count461
+\blx@tempcntc=\count462
+\c@blx@maxsection=\count463
+\blx@maxsegment@0=\count464
+\blx@notetype=\count465
+\blx@parenlevel@text=\count466
+\blx@parenlevel@foot=\count467
+\blx@sectionciteorder@0=\count468
+\blx@sectionciteorderinternal@0=\count469
+\blx@entrysetcounter=\count470
+\blx@biblioinstance=\count471
 \labelnumberwidth=\skip77
 \labelalphawidth=\skip78
 \biblabelsep=\skip79
@@ -2532,9 +2540,9 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read6
 \blx@bcfout=\write5
 \blx@langwohyphens=\language80
-\c@mincomprange=\count471
-\c@maxcomprange=\count472
-\c@mincompwidth=\count473
+\c@mincomprange=\count472
+\c@maxcomprange=\count473
+\c@mincompwidth=\count474
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -2543,74 +2551,74 @@ File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count474
-\c@savedafterword=\count475
-\c@annotator=\count476
-\c@savedannotator=\count477
-\c@author=\count478
-\c@savedauthor=\count479
-\c@bookauthor=\count480
-\c@savedbookauthor=\count481
-\c@commentator=\count482
-\c@savedcommentator=\count483
-\c@editor=\count484
-\c@savededitor=\count485
-\c@editora=\count486
-\c@savededitora=\count487
-\c@editorb=\count488
-\c@savededitorb=\count489
-\c@editorc=\count490
-\c@savededitorc=\count491
-\c@foreword=\count492
-\c@savedforeword=\count493
-\c@holder=\count494
-\c@savedholder=\count495
-\c@introduction=\count496
-\c@savedintroduction=\count497
-\c@namea=\count498
-\c@savednamea=\count499
-\c@nameb=\count500
-\c@savednameb=\count501
-\c@namec=\count502
-\c@savednamec=\count503
-\c@translator=\count504
-\c@savedtranslator=\count505
-\c@shortauthor=\count506
-\c@savedshortauthor=\count507
-\c@shorteditor=\count508
-\c@savedshorteditor=\count509
-\c@labelname=\count510
-\c@savedlabelname=\count511
-\c@institution=\count512
-\c@savedinstitution=\count513
-\c@lista=\count514
-\c@savedlista=\count515
-\c@listb=\count516
-\c@savedlistb=\count517
-\c@listc=\count518
-\c@savedlistc=\count519
-\c@listd=\count520
-\c@savedlistd=\count521
-\c@liste=\count522
-\c@savedliste=\count523
-\c@listf=\count524
-\c@savedlistf=\count525
-\c@location=\count526
-\c@savedlocation=\count527
-\c@organization=\count528
-\c@savedorganization=\count529
-\c@origlocation=\count530
-\c@savedoriglocation=\count531
-\c@origpublisher=\count532
-\c@savedorigpublisher=\count533
-\c@publisher=\count534
-\c@savedpublisher=\count535
-\c@language=\count536
-\c@savedlanguage=\count537
-\c@origlanguage=\count538
-\c@savedoriglanguage=\count539
-\c@pageref=\count540
-\c@savedpageref=\count541
+\c@afterword=\count475
+\c@savedafterword=\count476
+\c@annotator=\count477
+\c@savedannotator=\count478
+\c@author=\count479
+\c@savedauthor=\count480
+\c@bookauthor=\count481
+\c@savedbookauthor=\count482
+\c@commentator=\count483
+\c@savedcommentator=\count484
+\c@editor=\count485
+\c@savededitor=\count486
+\c@editora=\count487
+\c@savededitora=\count488
+\c@editorb=\count489
+\c@savededitorb=\count490
+\c@editorc=\count491
+\c@savededitorc=\count492
+\c@foreword=\count493
+\c@savedforeword=\count494
+\c@holder=\count495
+\c@savedholder=\count496
+\c@introduction=\count497
+\c@savedintroduction=\count498
+\c@namea=\count499
+\c@savednamea=\count500
+\c@nameb=\count501
+\c@savednameb=\count502
+\c@namec=\count503
+\c@savednamec=\count504
+\c@translator=\count505
+\c@savedtranslator=\count506
+\c@shortauthor=\count507
+\c@savedshortauthor=\count508
+\c@shorteditor=\count509
+\c@savedshorteditor=\count510
+\c@labelname=\count511
+\c@savedlabelname=\count512
+\c@institution=\count513
+\c@savedinstitution=\count514
+\c@lista=\count515
+\c@savedlista=\count516
+\c@listb=\count517
+\c@savedlistb=\count518
+\c@listc=\count519
+\c@savedlistc=\count520
+\c@listd=\count521
+\c@savedlistd=\count522
+\c@liste=\count523
+\c@savedliste=\count524
+\c@listf=\count525
+\c@savedlistf=\count526
+\c@location=\count527
+\c@savedlocation=\count528
+\c@organization=\count529
+\c@savedorganization=\count530
+\c@origlocation=\count531
+\c@savedoriglocation=\count532
+\c@origpublisher=\count533
+\c@savedorigpublisher=\count534
+\c@publisher=\count535
+\c@savedpublisher=\count536
+\c@language=\count537
+\c@savedlanguage=\count538
+\c@origlanguage=\count539
+\c@savedoriglanguage=\count540
+\c@pageref=\count541
+\c@savedpageref=\count542
 \shorthandwidth=\skip85
 \shortjournalwidth=\skip86
 \shortserieswidth=\skip87
@@ -2640,19 +2648,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count542
-\c@textcitetotal=\count543
-\c@textcitemaxnames=\count544
-\c@biburlbigbreakpenalty=\count545
-\c@biburlbreakpenalty=\count546
-\c@biburlnumpenalty=\count547
-\c@biburlucpenalty=\count548
-\c@biburllcpenalty=\count549
+\c@textcitecount=\count543
+\c@textcitetotal=\count544
+\c@textcitemaxnames=\count545
+\c@biburlbigbreakpenalty=\count546
+\c@biburlbreakpenalty=\count547
+\c@biburlnumpenalty=\count548
+\c@biburlucpenalty=\count549
+\c@biburllcpenalty=\count550
 \biburlbigskip=\muskip20
 \biburlnumskip=\muskip21
 \biburlucskip=\muskip22
 \biburllcskip=\muskip23
-\c@smartand=\count550
+\c@smartand=\count551
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -2666,8 +2674,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
 bx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count551
-\c@bbx:relatedtotal=\count552
+\c@bbx:relatedcount=\count552
+\c@bbx:relatedtotal=\count553
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -2706,14 +2714,14 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 
-setup.tex:171: Package biblatex Error: '\bibliographystyle' invalid for 'biblat
+setup.tex:172: Package biblatex Error: '\bibliographystyle' invalid for 'biblat
 ex'.
 
 See the biblatex package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 \bibliographystyle{ieeetr}
+l.172 \bibliographystyle{ieeetr}
                                 
 Use the package option 'style' instead.
 I'm ignoring this command.
@@ -2723,8 +2731,8 @@ I'm ignoring this command.
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count553
-\@quotereset=\count554
+\@quotelevel=\count554
+\@quotereset=\count555
 (W:/PycharmProjects\ceid-web\Report\out\main.aux)
 \openout1 = `main.aux'.
 
@@ -2879,9 +2887,10 @@ File: puenc-greek.def 2023-09-12 2.5 Greek LICRs for PDF strings
 tenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 ))
-\c@lstlisting=\count555
+\c@lstlisting=\count556
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'greek'...
 Package biblatex Info: ... file 'greek.lbx' found.
@@ -3608,19 +3617,30 @@ Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
-2_admin.tex:108: Missing number, treated as zero.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[8]
+2_admin.tex:109: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.108         \subsection{Map}
+l.109         \subsection{Map}
                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-2_admin.tex:108: Illegal unit of measure (pt inserted).
+2_admin.tex:109: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.108         \subsection{Map}
+l.109         \subsection{Map}
                               
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -3639,7 +3659,17 @@ Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
 Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
 anguage=dflt;mapping=tex-text;!
-
+File: img/admin-map-bubble.png Graphic file (type bmp)
+<img/admin-map-bubble.png>
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+) (2_rescuer.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3649,7 +3679,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
-[8])
+[9]
+2_rescuer.tex:1: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.1 \section{RESCUER}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_rescuer.tex:1: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.1 \section{RESCUER}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3659,24 +3711,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
-[9] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
+[10] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2E96E742E96287C0B8BD754BA0AF2F1E;2179.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 2E96E742E96287C0B8BD754BA0AF2F1E;2179
+(rerunfilecheck)             After:  83EC7E8E7C896A963A0EF84FA36EBEB8;2269.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50445 strings out of 409029
- 1115931 string characters out of 5756742
- 1987169 words of memory out of 5000000
- 72472 multiletter control sequences out of 15000+600000
+ 50537 strings out of 409029
+ 1117607 string characters out of 5756742
+ 1988534 words of memory out of 5000000
+ 72557 multiletter control sequences out of 15000+600000
  565357 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  121i,14n,124p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (10 pages).
+Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (11 pages).

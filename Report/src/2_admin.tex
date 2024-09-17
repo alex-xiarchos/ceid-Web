@@ -68,7 +68,7 @@
         Συγκεκριμένα επιστρέφεται ένα JSON αρχείο της μορφής:
 
         \begin{graycomment}
-            \verb|{"categories": [...], "products": [id, name, category_id, category]}|
+            \verb|{"categories" : [...], "products": [id, name, category_id, category]}|
         \end{graycomment}
 
         Το population της σελίδας με τα αντικείμενα πραγματοποιείται μέσω της \c{updateProductGrid(products)}, η οποία περιέχει μια επανάληψη όπου προσθέτει divs στη HTML σελίδα.
@@ -105,6 +105,7 @@
             Υπάρχει ένα Event Listener που ενεργοποιείται με το κλικ στο κουμπί \textbf{Upload}, το αρχείο αποθηκεύεται σε έναν reader, και γίνεται ένα AJAX request στο \c{upload.php}.
             Η PHP ελέγχει αν το προϊόν υπάρχει ήδη (ελέγχοντας το \c{id} του), και αν δεν υπάρχει, τπ προσθέτει.
 
+        \pagebreak
         \subsection{Map}
             Η σελίδα περιλαμβάνει μια οπτική αναπαράσταση των Requests, των Offer και των Rescuers σε έναν χάρτη.
 
@@ -113,4 +114,18 @@
                 \caption{Χάρτης admin}
             \end{figure}
 
-            Κατά τη φόρτωση της σελίδας, στο \c{map.js} τρέχουν οι συναρτήσεις
+            Κατά τη φόρτωση της σελίδας, στο \c{map.js} τρέχουν οι συναρτήσεις \c{getOffers}, \c{getRequests}, \c{getRescuerData} και \c{getBaseLocation},
+                οι οποίες στέλνουν AJAX requests σε αντίστοιχα αρχεία PHP, για την ανάκτηση των πληροφοριών από τη βάση.
+            Επιπλέον, η \c{getBaseLocation} αρχικοποιεί ένα μετακινούμενο Leaflet marker στο χάρτη (που αναπαριστά την αποθήκη/βάση) στις συντεταγμένες που δέχεται από το PHP.
+            Το marker μετακινείται μέσω της \c{updateBaseLocation} η οποία δημιουργεί τα κατάλληλα μηνύματα, και κάνει handle την ανανέωση της βάσης δεδομένων με τις νέες συντεταγμένες.
+
+            Μετά τη φόρτωση των δεδομένων, δημιουργούνται \c{L.layerGroups} markers που επίσης αντιστοιχίζονται στο legend του χάρτη.
+            Δημιουργούνται δύο διαφορετικά tiles που αντιστοιχούν σε δύο διαφορετικούς χάρτες (light mode και dark mode), παρμένοι από το maptiler.com.
+            Δημιουργείται ένα επιπλέον κουμπί στο legend του χάρτη μέσω της \c{L.Control.extend} για το toggle των δύο modes του χάρτη.
+
+            Η \c{displayRequests()} και \c{displayOffers()} κάνουν populate τον χάρτη και επίσης δημιουργούν τα συννεφάκια με πληροφορίες.
+
+            \begin{figure}[H] \noindent \centering
+                \includegraphics[width=0.3\textwidth]{img/admin-map-bubble}
+                \caption{Συννεφάκι marker}
+            \end{figure}
