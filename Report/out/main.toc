@@ -18,3 +18,4 @@
 \contentsline {subsubsection}{\numberline {\if@rl \I {2.3.2}\else \textLR {2.3.2}\fi .2}Upload}{8}{subsubsection.2.3.2.2}%
 \contentsline {subsection}{\numberline {\if@rl \I {3.3.2}\else \textLR {2.3.3}\fi }Map}{9}{subsection.2.3.3}%
 \contentsline {section}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }RESCUER}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.4.2}\else \textLR {2.4.1}\fi }Home}{10}{subsection.2.4.1}%

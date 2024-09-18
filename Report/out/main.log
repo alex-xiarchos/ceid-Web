@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  17 SEP 2024 22:00
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  18 SEP 2024 03:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3701,7 +3701,48 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-)
+2_rescuer.tex:2: Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.2     \subsection{Home}
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+2_rescuer.tex:2: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.2     \subsection{Home}
+                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: img/rescuer-map.png Graphic file (type bmp)
+<img/rescuer-map.png>
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+File: img/rescuer-no_location.png Graphic file (type bmp)
+<img/rescuer-no_location.png>
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3711,31 +3752,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
-[10] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
+[10]
+File: img/rescuer-marker1.png Graphic file (type bmp)
+<img/rescuer-marker1.png>
+File: img/rescuer-marker2.png Graphic file (type bmp)
+<img/rescuer-marker2.png>
+
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Light/OT:script=latn;l
+anguage=dflt;mapping=tex-text;!
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[11] (W:/PycharmProjects\ceid-web\Report\out\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 2E96E742E96287C0B8BD754BA0AF2F1E;2179
-(rerunfilecheck)             After:  83EC7E8E7C896A963A0EF84FA36EBEB8;2269.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: DAA12309472C1F1A711B870182589423;2351.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50537 strings out of 409029
- 1117607 string characters out of 5756742
- 1988534 words of memory out of 5000000
- 72557 multiletter control sequences out of 15000+600000
+ 50614 strings out of 409029
+ 1119736 string characters out of 5756742
+ 1988728 words of memory out of 5000000
+ 72630 multiletter control sequences out of 15000+600000
  565357 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  121i,14n,124p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (11 pages).
+Output written on W:/PycharmProjects\ceid-web\Report\out\main.pdf (12 pages).
