@@ -1,14 +1,23 @@
 \chapter{ΡΥΘΜΙΣΕΙΣ SERVER}
-To συγκεκριμένο πρόγραμμα χρησιμοποιεί ως web-server τον Apache, ο οποίος επιτρέπει την παροχή ενός ολοκληρομένου περιβάλλοντος για δοκιμές web εφαρμογών τοπικά. Εδώ μπορεί να παραμετροποιηθεί το αρχείο .htaccess το οποίο πρόκειται για ένα αρχείο ρυθμίσεων που χρησιμοποιεί ο Apache server για τον έλεγχο της συμπεριφοράς και των ρυθμίσεων της web εφαρμογής. Μέσω αυτού μπορούν να γίνουν ρυθμίσεις όπως ανακατευθύνσεις URL, έλεγχος πρόσβασης, διαχείριση σφαλμάτων και να οριστούν περαιτέρω οδηγίες χωρίς να απαιτούνται αλλαγές στο κύριο αρχείο ρυθμίσεων του server. Στο συγκεκριμένο .htaccess, ενεργοποιείται η μηχανή επανεγγραφής (RewriteEngine On) και εφαρμόζονται δύο κύριες λειτουργίες: αρχικά, γίνεται ανακατεύθυνση στη σελίδα index.html εάν δεν έχει οριστεί το cookie user_type, προστατεύοντας έτσι συγκεκριμένες σελίδες. Επιπλέον, με την εντολή <FilesMatch>, προστατεύονται συγκεκριμένα αρχεία (admin, base, map) ώστε να είναι προσβάσιμα μόνο σε χρήστες με δικαιώματα admin. Παρακάτω αποτυπώνονται οι ρυθμίσεις που ορίστηκαν σε αυτό.
+    To συγκεκριμένο πρόγραμμα χρησιμοποιεί ως web-server τον Apache, ο οποίος επιτρέπει την παροχή ενός ολοκληρωμένου περιβάλλοντος για δοκιμές web εφαρμογών τοπικά.
+    Εδώ μπορεί να παραμετροποιηθεί το αρχείο \c{.htaccess} το οποίο πρόκειται για ένα αρχείο ρυθμίσεων που χρησιμοποιεί ο Apache server για τον έλεγχο της συμπεριφοράς και των ρυθμίσεων της web εφαρμογής.
 
-%RewriteEngine On
-%
-%# Redirect to login if user_type cookie is not set
-%RewriteCond %{HTTP_COOKIE} !(^|;\s*)user_type=[^;]+ [NC]
-%RewriteRule ^(admin|base|map|user|car_items|rescuer_items|rescuer_tasks|rescuer|)\.html$ index.html [R=302,L]
-%
-%# Protect specific files for admin access only
-%<FilesMatch "^(admin|base|map)\.html$">
-%    RewriteCond %{HTTP_COOKIE} !user_type=a [NC]
-%    RewriteRule ^.*$ index.html [R=403,L]
-%</FilesMatch>
+    Μέσω αυτού μπορούν να γίνουν ρυθμίσεις όπως ανακατευθύνσεις URL, έλεγχος πρόσβασης, διαχείριση σφαλμάτων και να οριστούν περαιτέρω οδηγίες χωρίς να απαιτούνται αλλαγές στο κύριο αρχείο ρυθμίσεων του server.
+    Στο συγκεκριμένο \c{.htaccess}, ενεργοποιείται η μηχανή επανεγγραφής (RewriteEngine On) και εφαρμόζονται δύο κύριες λειτουργίες: αρχικά, γίνεται ανακατεύθυνση στη σελίδα \c{index.html} εάν δεν έχει οριστεί το cookie \c{user\_type}, προστατεύοντας έτσι συγκεκριμένες σελίδες.
+    Επιπλέον, με την εντολή \c{\<FilesMatch\>}, προστατεύονται συγκεκριμένα αρχεία (admin, base, map) ώστε να είναι προσβάσιμα μόνο σε χρήστες με δικαιώματα admin.
+
+    Παρακάτω αποτυπώνονται οι ρυθμίσεις που ορίστηκαν σε αυτό:
+
+    \begin{lstlisting}
+RewriteEngine On
+
+# Redirect to login if user_type cookie is not set
+RewriteCond %{HTTP_COOKIE} !(^|;\s*)user_type=[^;]+ [NC]
+RewriteRule ^(admin|base|map|user|car_items|rescuer_items|rescuer_tasks|rescuer|)\.html$ index.html [R=302,L]
+
+# Protect specific files for admin access only
+<FilesMatch "^(admin|base|map)\.html$">
+    RewriteCond %{HTTP_COOKIE} !user_type=a [NC]
+    RewriteRule ^.*$ index.html [R=403,L]
+</FilesMatch>
+    \end{lstlisting}
