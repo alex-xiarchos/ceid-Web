@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-300">
+    <div class="w-full max-w-md mx-auto bg-gray-800 shadow-md rounded-lg p-8">
+        <!-- Back Button in the Top-Left Corner -->
+        <div class="text-center mb-6">
+            <h2 class="text-2xl font-bold text-white">Create Account</h2>
+        </div>
+        <form class="space-y-6">
+            <div class="inputBox">
+                <label for="user" class="block text-lg font-medium text-red-600">Username</label>
+                <input type="text" id="user" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-center" placeholder="Username">
+            </div>
+            <div class="inputBox">
+                <label for="pass" class="block text-lg font-medium text-red-600">Password</label>
+                <input type="password" id="pass" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-center" placeholder="Password">
+            </div>
+            <div class="inputBox">
+                <label for="name" class="block text-lg font-medium text-red-600">Name</label>
+                <input type="text" id="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-center" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <label for="email" class="block text-lg font-medium text-red-600">Email</label>
+                <input type="email" id="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-center" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <label for="phone" class="block text-lg font-medium text-red-600">Phone Number</label>
+                <input type="tel" id="phone" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-center" placeholder="Phone Number">
+            </div>
+            <div class="inputBox">
+                <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="openModal()">Set Location</button>
+                <input type="hidden" id="location" name="location">
+            </div>
+            <div class="flex justify-between items-center">
+                <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="register_btn" onclick="signup()">Register</button>
+                <button type="button" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="window.location.href='index.html'">Back to login</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div id="mapModal" class="fixed inset-0 hidden bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full p-6">
+            <div class="flex justify-between items-center mb-4">
+                <button class="text-gray-500 hover:text-gray-700" onclick="closeModal()">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="map" style="height: 300px;" class="rounded-md border border-gray-300 shadow-sm"></div>
+            <div class="mt-4">
+                <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" onclick="closeModal()">Set Location</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/signup.js"></script>
+   
+</body>
+</html>

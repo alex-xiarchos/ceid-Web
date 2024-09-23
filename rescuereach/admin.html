@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col">
+
+    <!-- Top Navbar -->
+    <header class="bg-gray-800 text-gray-200 py-4 px-6 flex items-center justify-between">
+       <div class="flex items-center hover:bg-red-600 rounded-2xl cursor-pointer pr-2">
+            <a href="./admin.html" class="flex items-center">
+                <img src="image.png" class="h-10 w-10">
+                <span class="ml-2 font-lobster text-2xl">RescueReach</span>
+            </a>
+        </div>
+        <nav class="flex space-x-4">
+            <a href="./admin.html" class="hover:bg-red-700 py-2 px-4 rounded transition duration-200 font-bold text-gray-200">Home</a>
+            <a href="./base.html" class="hover:bg-red-700 py-2 px-4 rounded transition duration-200 font-bold text-gray-200">Base</a>
+            <a href="map.html" class="hover:bg-red-700 py-2 px-4 rounded transition duration-200 font-bold text-gray-200">Map</a>
+            <a href="php/logout.php" class="hover:bg-red-700 py-2 px-4 rounded transition duration-200 font-bold text-gray-200">Exit</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <a href="#" class="bg-blue-700 hover:bg-blue-800 py-2 px-4 rounded transition duration-200 font-bold text-gray-200" onclick="openModal('generateGraphModal')">Graphs</a>
+            <button class="bg-gray-700 hover:bg-gray-600 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600">
+                <img src="admin.png" class="h-6 w-6 rounded-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4m0 0v4m0-4h4m4 0H9m6-4v4m0 4v4m0-4h4m-4 4H9m12-4h.01M21 12V5a2 2 0 00-2-2h-4M9 2H5a2 2 0 00-2 2v4m0 8v6a2 2 0 002 2h4m8 0h4a2 2 0 002-2v-4M3 12h.01"></path>
+                </img>
+            </button>
+            <div class="flex items-center space-x-3">
+                <span class="text-gray-200">Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="flex-1 p-6">
+        <h1 class="text-3xl font-bold mb-4">Dashboard</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-96">
+            <!-- Panel 1: Quick Item Summary -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md overflow-y-auto">
+                <h2 class="text-lg font-medium text-gray-200 mb-4">Quick Summary</h2>
+                <p class="text-gray-400 mb-2">Total Items: <span id="totalItems"></span></p>
+                <p class="text-gray-400 mb-2">Items running out: <span id="lowStockItems"></span></p>
+                <p class="text-gray-400 mb-2">Total Vehicles: <span id="totalVehicles"></span></p>
+                <p class="text-gray-400 mb-2">Active Vehicles: <span id="activeVehicles"></span></p>
+                <h2 class="text-lg font-medium text-gray-200 mt-4 mb-2">Users Registered</h2>
+                <table class="min-w-full bg-gray-700 rounded-lg shadow-md">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 bg-red-600 text-white font-bold text-sm">Username</th>
+                            <th class="py-2 px-4 bg-red-600 text-white font-bold text-sm">Name</th>
+                            <th class="py-2 px-4 bg-red-600 text-white font-bold text-sm">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTableBody" class="text-gray-400">
+                        <!-- User rows will be inserted here -->
+                    </tbody>
+                </table>
+                
+            </div>
+
+            <!-- Panel 2: Create Announcement -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h2 class="text-lg font-medium text-gray-200">Create Announcement</h2>
+                <form id="announcement_items" class="space-y-4">
+                    <select id="category" name="category" class="block w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                        <!-- Categories will be populated here -->
+                    </select>
+                    <select id="announcement" multiple class="block custom-select w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 overflow-hidden" required style="height: 210px">
+                        <!-- Items will be populated here based on selected category -->
+                    </select>
+                    <div class="flex space-x-2">
+                        <input type="number" min="1" id="quantity" name="quantity" placeholder="Quantity" class="block w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                        <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Create</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Panel 3: Create Rescuer Account -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h2 class="text-lg font-medium text-gray-200">Create Rescuer Account</h2>
+                <form id="createRescuerForm" class="space-y-4">
+                    <input type="text" id="rescuerName" name="name" placeholder="Name" class="block w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="text" id="rescuerUsername" name="username" placeholder="Username" class="block w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="email" id="rescuerEmail" name="email" placeholder="Email" class="block w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="password" id="rescuerPassword" name="password" placeholder="Password" class="block w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="text" id="rescuerPhone" name="phone" placeholder="Phone" class="block w-full py-2 px-4 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Create Account</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md mx-4 mt-12">
+            <h2 class="text-lg font-medium text-gray-200 mb-4">Announcements Summary</h2>
+            <div class="overflow-y-auto max-h-64">
+                <table class="min-w-full bg-gray-700 rounded-lg shadow-md">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 bg-red-600 text-white font-bold text-sm">Announcement ID</th>
+                            <th class="py-2 px-4 bg-red-600 text-white font-bold text-sm">Quantity</th>
+                            <th class="py-2 px-4 bg-red-600 text-white font-bold text-sm" id="itmname">Item Name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="announcementSummaryTableBody" class="text-gray-400">
+                        <!-- Announcement summary rows will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Generate Graph -->
+    <div id="generateGraphModal" class="hidden fixed z-50 inset-0 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+                <div class="bg-red-600 text-white p-4">
+                    <h2 class="text-lg font-medium">Generate Graph</h2>
+                </div>
+                <div class="bg-gray-700 p-4">
+                    <form id="graphGenerationForm" class="space-y-4">
+                        <div>
+                            <label for="graphType" class="block text-sm font-medium text-gray-200">Graph Type</label>
+                            <select id="graphType" name="graphType" class="mt-1 block w-full py-2 px-4 border border-gray-600 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <option value="offers">Offers</option>
+                                <option value="requests">Requests</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="startDate" class="block text-sm font-medium text-gray-200">Start Date</label>
+                            <input type="date" id="startDate" name="startDate" class="mt-1 block w-full py-2 px-4 border border-gray-600 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                        </div>
+                        <div>
+                            <label for="endDate" class="block text-sm font-medium text-gray-200">End Date</label>
+                            <input type="date" id="endDate" name="endDate" class="mt-1 block w-full py-2 px-4 border border-gray-600 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                        </div>
+                        <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Generate Graph</button>
+                    </form>
+                </div>
+                <div class="bg-gray-800 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal('generateGraphModal')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/util.js"></script>
+</body>
+</html>

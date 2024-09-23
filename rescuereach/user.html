@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex">
+
+    <!-- Sidebar -->
+    <div class="bg-gray-800 w-64 space-y-6 py-7 px-2 flex flex-col">
+       <div class="flex items-center hover:bg-red-600 rounded-2xl cursor-pointer">
+            <a href="./user.html" class="flex items-center">
+                <img src="image.png" class="h-10 w-10">
+                <span class="ml-2 font-lobster text-2xl">RescueReach</span>
+            </a>
+        </div>
+        <nav class="flex flex-col space-y-2">
+            <a href="./user.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-red-700 font-bold text-gray-200">
+                Home
+            </a>
+            <a href="php/logout.php" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-red-700 font-bold text-gray-200">
+                Exit
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+
+        <!-- Main Dashboard Content -->
+        <main class="flex-1 p-6 h-screen">
+            <h1 id="welcomeMessage" class="text-4xl font-bold text-gray-200 mb-8"></h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                
+                <!-- Panel 1: Quick Summary -->
+                <div class="bg-gray-800 text-white p-4 shadow-md rounded-lg col-span-3 md:col-span-2 lg:col-span-2">
+                    <h2 class="text-lg font-medium">Create Request</h2>
+                    <form id="request_items" class="space-y-4">
+                        <!-- Dropdown for categories -->
+                        <select id="category" name="category"
+                                class="block w-full text-red-600 font-bold py-2 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <!-- Categories will be populated here -->
+                        </select>
+                    
+                        <!-- Search box for filtering items -->
+                        <input type="text" id="itemSearch" placeholder="Search for an item..."
+                               class="block w-full text-red-600 font-bold py-2 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"/>
+                    
+                        <!-- Items container where filtered items will be displayed -->
+                        <div id="announcementContainer" class="flex flex-wrap gap-2">
+                            <!-- Items will be populated here based on selected category -->
+                        </div>
+                    
+                        <div class="flex space-x-2">
+                            <input type="number" min="1" id="quantity" name="quantity" placeholder="Quantity"
+                                   class="text-red-600 font-bold px-4 py-2 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                   required>
+                            <button type="submit"
+                                    class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                Create
+                            </button>
+                        </div>
+                    </form>
+                    <h2 class="text-lg font-medium text-gray-200 mb-4 mt-4">Announcements</h2>
+                    <table class="min-w-full bg-gray-700 rounded-lg">
+                        <thead>
+                            <tr class="bg-red-700">
+                                <th class="px-4 py-2 text-left">Item</th>
+                                <th class="px-4 py-2 text-left">Quantity</th>
+                                <th class="px-4 py-2">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="announcementsTableBody" class="text-gray-400">
+                            <!-- User rows will be inserted here -->
+                        </tbody>
+                    </table>                    
+                </div>
+
+                <!-- Panel 2: Create Request (Now with half-width on the right) -->
+                <div class="bg-gray-800 text-white p-4 shadow-md rounded-lg col-span-3 md:col-span-1 lg:col-span-1">
+                    <h2 class="text-lg font-medium text-gray-200 mb-4">Quick Summary</h2>
+                    <div>
+                        <h3 class="text-lg font-medium text-red-700">My Requests</h3>
+                        <div id="userRequests" class="space-y-2 max-h-48 overflow-y-auto">
+                            <!-- User requests will be inserted here -->
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-red-700 mt-6">My Offers</h3>
+                        <div id="userOffers" class="space-y-2 max-h-48 overflow-y-auto">
+                            <!-- User offers will be inserted here -->
+                        </div>
+                    </div>
+                    
+                </div>  
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div id="userModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-2xl font-bold mb-4 text-white">Update User Information</h2>
+            <form id="updateUserForm">
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-400">Username</label>
+                    <input type="text" id="username" name="username" class="w-full p-2 border border-gray-700 bg-gray-700 text-white rounded mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-400">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-700 bg-gray-700 text-white rounded mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="telephone" class="block text-gray-400">Telephone</label>
+                    <input type="text" id="telephone" name="telephone" class="w-full p-2 border border-gray-700 bg-gray-700 text-white rounded mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-400">Password</label>
+                    <input type="password" id="password" name="password" class="w-full p-2 border border-gray-700 bg-gray-700 text-white rounded mt-1">
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" id="closeModal" class="mr-1 rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">Cancel</button>
+                    <button type="submit" class="rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/user.js"></script>
+    <script src="./js/util.js"></script>
+
+</body>
+</html>
+
+
+
+

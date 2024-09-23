@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-300">
+    <!-- Login Form -->
+    <div class="w-full max-w-md mx-auto bg-gray-800 shadow-md rounded-lg p-8" id="login_form">
+        <div class="text-center mb-6">
+            <img src="image.png" id="login_img" class="mx-auto h-40 w-40">
+        </div>
+        <form id="login" class="space-y-6 ">
+            <div>
+                <label for="username" class="block text-lg font-medium text-red-600">Username</label>
+                <input type="text" id="username" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-center" placeholder="Username">
+            </div>
+            <div>
+                <label for="password" class="block text-lg font-medium text-red-600">Password</label>
+                <input type="password" id="password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-center" placeholder="******************">
+            </div>
+            <div class="flex justify-between items-center">
+                <button type="button" id="login_btn" onclick="login()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline">Login</button>
+                <a href="./signup.html" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline">Signup</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

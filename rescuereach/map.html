@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Map</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex">
+
+    <!-- Sidebar -->
+    <div class="bg-gray-800 w-64 space-y-6 py-7 px-2 flex flex-col">
+        <div class="flex items-center cursor-pointer">
+            <a href="./admin.html" class="flex items-center hover:bg-red-600 rounded-2xl pr-2">
+                <img src="image.png" class="h-10 w-10">
+                <span class="ml-2 font-lobster text-2xl">RescueReach</span>
+            </a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="bg-gray-700 hover:bg-gray-600 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600">
+                <img src="admin.png" class="ml-2 h-6 w-6 rounded-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4m0 0v4m0-4h4m4 0H9m6-4v4m0 4v4m0-4h4m-4 4H9m12-4h.01M21 12V5a2 2 0 00-2-2h-4M9 2H5a2 2 0 00-2 2v4m0 8v6a2 2 0 002 2h4m8 0h4a2 2 0 002-2v-4M3 12h.01"></path>
+                </img>
+            </button>
+            <div class="flex items-center space-x-3">
+                <span class="text-gray-200">Admin</span>
+            </div>
+        </div>
+        <nav class="flex flex-col space-y-2">
+            <a href="./admin.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-red-700 font-bold text-gray-200">
+                Home
+            </a>
+            <a href="./base.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-red-700 font-bold text-gray-200">
+                Base
+            </a>
+            <a href="map.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-red-700 font-bold text-gray-200">
+                Map
+            </a>
+            <a href="php/logout.php" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-red-700 font-bold text-gray-200">
+                Exit
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+
+        <!-- Main Content Area -->
+        <main class="flex-1 p-6 h-screen overflow-y-scroll">
+            <h1 class="text-4xl font-bold text-gray-200 mb-8">Map</h1>
+            <div id="map" class="w-full h-full custom-height rounded-lg overflow-hidden mb-8">
+                <!-- Leaflet map will be injected here -->
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="flex items-center">
+                        <img src="request.png" class="legend-icon h-6 w-4 cstm-lgnd rounded" id="toggle-requests" title="Toggle Requests">
+                        <span class="ml-2">Pending Requests</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="offer.png" class="legend-icon h-6 w-4 cstm-lgnd rounded" id="toggle-offers" title="Toggle Offers">
+                        <span class="ml-2">Pending Offers</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assigned_request.png" class="legend-icon h-6 w-4 cstm-lgnd rounded" id="toggle-assigned-requests" title="Toggle Assigned Requests">
+                        <span class="ml-2">Assigned Requests</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assigned_offer.png" class="legend-icon h-6 w-4 cstm-lgnd rounded" id="toggle-assigned-offers" title="Toggle Assigned Offers">
+                        <span class="ml-2">Assigned Offers</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="rescuer.png" class="legend-icon h-6 w-4 cstm-lgnd rounded" id="toggle-rescuer" title="Toggle Rescuers">
+                        <span class="ml-2">Rescuers</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="legend-line offer-line"></span>
+                        <span class="ml-2">Offer Lines</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="legend-line request-line"></span>
+                        <span class="ml-2">Request Lines</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- jQuery and other scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet-curve"></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>
